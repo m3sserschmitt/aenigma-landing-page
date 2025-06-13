@@ -11,45 +11,110 @@ A landing page for Aenigma - Advanced end-to-end encryption messaging app for An
 
 ## Technologies Used
 
-- React 18
-- TypeScript
-- Vite
-- Tailwind CSS
-- shadcn/ui components
+- Pure HTML5
+- Vanilla JavaScript
+- CSS3 with modern features
+- Responsive design
+- GitHub Pages compatible
+
+## Project Structure
+
+```
+aenigma-landing/
+├── index.html          # Main landing page
+├── styles.css          # All styles and responsive design
+├── script.js           # Interactive functionality
+├── 404.html           # Custom 404 page for GitHub Pages
+├── favicon.ico        # Website favicon
+└── README.md          # This file
+```
 
 ## Development
 
-```bash
-# Install dependencies
-npm install
+To run this project locally:
 
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
+1. Clone the repository
+2. Open `index.html` in your web browser
+3. Or use a local server like Python's built-in server:
+   ```bash
+   python -m http.server 8000
+   ```
+4. Navigate to `http://localhost:8000`
 
 ## Deployment to GitHub Pages
 
 1. Fork or clone this repository
-2. Update the `base` path in `vite.config.ts` to match your repository name
-3. Enable GitHub Pages in your repository settings
-4. Push to the main branch to trigger automatic deployment
-
-The site will be available at: `https://yourusername.github.io/repository-name/`
+2. Push your code to a GitHub repository
+3. Go to repository Settings → Pages
+4. Select "Deploy from a branch" and choose your main branch
+5. Your site will be available at: `https://yourusername.github.io/repository-name/`
 
 ## Customization
 
-To customize for your own repository:
+### Colors
+The color palette is defined in CSS custom properties in `styles.css`:
+- Primary: #757575 (Medium Gray)
+- Background: #212121 (Almost Black Gray)
+- Surface: #303030 (Dark Surface)
+- And more...
 
-1. Update the `base` path in `vite.config.ts`
-2. Update the GitHub Pages URL in `index.html` meta tags
-3. Modify the deployment workflow if needed
+### Content
+Update the content by editing `index.html`:
+- Hero section text
+- Feature descriptions
+- Security details
+- Download links
+
+### Styling
+Modify `styles.css` to change:
+- Layout and spacing
+- Animations and transitions
+- Typography
+- Color schemes
+
+### Functionality
+Enhance `script.js` to add:
+- Form handling
+- API integrations
+- Advanced animations
+- Analytics tracking
+
+## Features
+
+- **Responsive Design**: Works on all devices and screen sizes
+- **Smooth Animations**: CSS animations and JavaScript interactions
+- **SEO Optimized**: Proper meta tags and semantic HTML
+- **Fast Loading**: Optimized CSS and minimal dependencies
+- **Accessible**: Semantic HTML and keyboard navigation support
+
+## Browser Support
+
+This landing page supports all modern browsers:
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
+
+## Performance
+
+The page is optimized for performance:
+- No external dependencies
+- Minified CSS (in production)
+- Optimized images
+- Efficient animations using CSS transforms
 
 ## License
 
 This project is open source and available under the MIT License.
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## Support
+
+For questions or issues, please open an issue on GitHub.
