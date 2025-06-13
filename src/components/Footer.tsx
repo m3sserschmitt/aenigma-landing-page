@@ -12,10 +12,10 @@ const Footer = () => {
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-2">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <span className="text-2xl font-bold text-white">SecureChat</span>
+              <span className="text-2xl font-bold text-white">Aenigma</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              The world's most secure messaging app, built with privacy at its core. Your conversations, protected by military-grade encryption.
+              The most secure Android messaging app, built with privacy at its core using OpenSSL EVP API with AES GCM 256 and RSA 4096-bit encryption.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="bg-white/5 hover:bg-white/10 rounded-full p-3 transition-colors duration-300">
@@ -57,16 +57,16 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
-              <h5 className="text-white font-semibold mb-2">Open Source</h5>
-              <p className="text-gray-300 text-sm">Our encryption code is publicly auditable on GitHub</p>
+              <h5 className="text-white font-semibold mb-2">OpenSSL Powered</h5>
+              <p className="text-gray-300 text-sm">Built on industry-standard cryptographic libraries used worldwide</p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
               <h5 className="text-white font-semibold mb-2">No Data Collection</h5>
               <p className="text-gray-300 text-sm">We don't collect, store, or analyze your personal data</p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
-              <h5 className="text-white font-semibold mb-2">Independently Audited</h5>
-              <p className="text-gray-300 text-sm">Regular security audits by leading cybersecurity firms</p>
+              <h5 className="text-white font-semibold mb-2">Android Exclusive</h5>
+              <p className="text-gray-300 text-sm">Optimized specifically for Android devices and security</p>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 SecureChat. All rights reserved. Built with privacy and security in mind.
+            © 2024 Aenigma. All rights reserved. Built with privacy and security in mind.
           </p>
         </div>
       </div>

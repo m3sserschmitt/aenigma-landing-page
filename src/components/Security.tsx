@@ -3,11 +3,11 @@ import { Shield, Lock, Key, CheckCircle } from "lucide-react";
 
 const Security = () => {
   const securityPoints = [
-    "Messages encrypted before leaving your device",
+    "Messages encrypted with AES GCM 256 before leaving your device",
+    "RSA 4096-bit keys for secure key exchange and authentication",
+    "OpenSSL EVP API for industry-standard cryptographic operations",
     "Only you and recipient have the decryption keys",
     "No servers can read your conversations",
-    "Automatic key rotation for maximum security",
-    "Open-source encryption protocols",
     "Regular security audits by experts"
   ];
 
@@ -40,7 +40,7 @@ const Security = () => {
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h4 className="text-lg font-semibold text-white mb-3">Technical Details</h4>
               <p className="text-gray-300 text-sm leading-relaxed">
-                We use the Signal Protocol with Double Ratchet Algorithm, providing forward secrecy and post-compromise security. Each message is encrypted with AES-256-GCM and keys are exchanged using X25519 Elliptic Curve Diffie-Hellman.
+                Aenigma uses OpenSSL's EVP (Envelope) API with AES-256-GCM for symmetric encryption and RSA 4096-bit keys for asymmetric operations. This combination provides authenticated encryption with associated data (AEAD) ensuring both confidentiality and integrity of your messages.
               </p>
             </div>
           </div>
@@ -56,8 +56,8 @@ const Security = () => {
                     <Key className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-white font-semibold mb-1">1. Key Generation</h4>
-                    <p className="text-gray-300 text-sm">Unique encryption keys created on your device</p>
+                    <h4 className="text-white font-semibold mb-1">1. RSA Key Exchange</h4>
+                    <p className="text-gray-300 text-sm">4096-bit RSA keys securely exchange AES session keys</p>
                   </div>
                 </div>
                 
@@ -72,8 +72,8 @@ const Security = () => {
                     <Shield className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-white font-semibold mb-1">2. Message Encryption</h4>
-                    <p className="text-gray-300 text-sm">Your message is encrypted before transmission</p>
+                    <h4 className="text-white font-semibold mb-1">2. AES GCM Encryption</h4>
+                    <p className="text-gray-300 text-sm">Message encrypted with AES-256-GCM using OpenSSL EVP</p>
                   </div>
                 </div>
                 
@@ -88,8 +88,8 @@ const Security = () => {
                     <Lock className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-white font-semibold mb-1">3. Secure Delivery</h4>
-                    <p className="text-gray-300 text-sm">Only the recipient can decrypt and read it</p>
+                    <h4 className="text-white font-semibold mb-1">3. Authenticated Delivery</h4>
+                    <p className="text-gray-300 text-sm">GCM mode ensures integrity and authenticity verification</p>
                   </div>
                 </div>
               </div>

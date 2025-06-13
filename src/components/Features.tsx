@@ -1,43 +1,25 @@
 
-import { Shield, Zap, Users, Eye, Key, Smartphone } from "lucide-react";
+import { Shield, Zap, Users } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
       icon: Shield,
-      title: "Military-Grade Encryption",
-      description: "AES-256 encryption ensures your data is protected with the same standards used by governments and military organizations worldwide.",
+      title: "AES GCM 256 Encryption",
+      description: "Advanced Encryption Standard with Galois/Counter Mode provides authenticated encryption for maximum security and data integrity.",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: Zap,
       title: "Lightning Fast",
-      description: "Optimized protocols ensure your encrypted messages are delivered instantly without compromising on security.",
+      description: "Optimized OpenSSL EVP API implementation ensures your encrypted messages are delivered instantly without compromising on security.",
       color: "from-yellow-500 to-orange-500"
     },
     {
       icon: Users,
       title: "Group Encryption",
-      description: "Secure group chats with up to 1000 participants, all with the same level of end-to-end encryption.",
+      description: "Secure group chats with up to 1000 participants, all protected with the same level of end-to-end encryption using RSA 4096-bit keys.",
       color: "from-purple-500 to-pink-500"
-    },
-    {
-      icon: Eye,
-      title: "Disappearing Messages",
-      description: "Set messages to automatically delete after a specified time for an extra layer of privacy protection.",
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      icon: Key,
-      title: "Perfect Forward Secrecy",
-      description: "New encryption keys for every message ensure that even if one key is compromised, your other messages remain secure.",
-      color: "from-red-500 to-rose-500"
-    },
-    {
-      icon: Smartphone,
-      title: "Cross-Platform Sync",
-      description: "Seamlessly sync your encrypted conversations across all your devices while maintaining security.",
-      color: "from-indigo-500 to-blue-500"
     }
   ];
 
@@ -54,7 +36,7 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div 
               key={index}

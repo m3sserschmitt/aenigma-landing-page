@@ -24,7 +24,7 @@ const DownloadSection = () => {
           </h2>
           
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join millions of users who trust our app for their most private communications. Download now and experience true digital privacy.
+            Join thousands of users who trust Aenigma for their most private communications. Download now and experience true digital privacy on Android.
           </p>
         </div>
         
@@ -42,9 +42,9 @@ const DownloadSection = () => {
           </div>
           
           <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-            <div className="text-3xl font-bold text-white mb-2">10M+</div>
-            <h3 className="text-lg font-semibold text-white mb-2">Downloads</h3>
-            <p className="text-gray-300 text-sm">Trusted by millions worldwide for secure messaging</p>
+            <div className="text-3xl font-bold text-white mb-2">OpenSSL</div>
+            <h3 className="text-lg font-semibold text-white mb-2">Powered</h3>
+            <p className="text-gray-300 text-sm">Built on industry-standard cryptographic libraries</p>
           </div>
           
           <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
@@ -60,25 +60,12 @@ const DownloadSection = () => {
             className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
           >
             <Download className="w-6 h-6 mr-3" />
-            Download for Android
+            Download Aenigma
           </Button>
           
           <p className="text-gray-400 text-sm">
-            Free download • No ads • No tracking • Open source
+            Free download • No ads • No tracking • Android exclusive
           </p>
-        </div>
-        
-        <div className="mt-12 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl p-8 border border-white/10">
-          <h3 className="text-2xl font-bold text-white mb-4">Coming Soon</h3>
-          <p className="text-gray-300 mb-4">
-            iOS version in development. Join our waitlist to be notified when it's available.
-          </p>
-          <Button 
-            variant="outline" 
-            className="border-white/30 text-white hover:bg-white/10 rounded-full"
-          >
-            Join iOS Waitlist
-          </Button>
         </div>
       </div>
     </section>
